@@ -1,0 +1,13 @@
+CONCLUSIONES
+
+Se realizaron pruebas automatizadas sobre la API Petstore utilizando Karate Framework.
+
+Para validar la mascota previamente modificada, primero se obtuvo su mascotaId mediante el escenario de actualización.
+
+Posteriormente, se utilizó el endpoint /pet/findByStatus con el estado sold. Este endpoint retornó varias mascotas con el mismo estado, por lo que el resultado no identificaba directamente una única mascota.
+
+Para obtener únicamente la mascota modificada, se filtró el mismo response utilizando el mascotaId obtenido anteriormente:
+
+response.filter(x => x.id == mascotaId)
+
+De esta manera, se logró identificar e imprimir únicamente la mascota que había sido modificada previamente, sin necesidad de realizar una consulta adicional por ID.

@@ -1,0 +1,5 @@
+**/.idea/
+**/target/
+**/drivers/
+*.zip
+*.rar

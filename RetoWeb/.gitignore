@@ -1,0 +1,57 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.flattened-pom.xml
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.vscode
+.classpath
+.project
+.settings/
+*.swp
+*.swo
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Test reports (local)
+test-results/
+logs/
+
+# Drivers (optional - si quieres versionar el chromedriver, comenta esta línea)
+drivers/chromedriver
+
+# Node (si usas node)
+node_modules/
+npm-debug.log
+
+# Build
+*.class
+*.jar
+*.war
+*.ear
+
+# OS
+.gradle
+.gradle/
+
+# Environment
+.env
+.env.local
+
+# Serenity reports (opcional - descomenta si no quieres subirlos)
+# target/site/serenity/
+# target/cucumber-reports/

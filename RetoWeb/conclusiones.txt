@@ -1,0 +1,13 @@
+CONCLUSIONES
+
+Se implementó una automatización del flujo de compra de productos en DemoBlaze utilizando Cucumber, Serenity BDD y Screenplay Pattern.
+
+Como parte de la implementación, se creó la Task reutilizable `AgregarProductoPorSeccion`, la cual recibe como parámetros `producto` y `seccion` mediante Strings. Esto permite reutilizar la misma tarea para agregar diferentes productos de distintas categorías al carrito sin duplicar la lógica de automatización.
+
+En el escenario Gherkin se repiten los pasos para agregar los productos, pero la lógica interna no se duplica, ya que ambos pasos utilizan la misma Task con diferentes datos:
+
+- Producto: "Nokia lumia 1520" | Sección: "Phones"
+- Producto: "Sony vaio i5" | Sección: "Laptops"
+
+
+Finalmente, se configuró la ejecución mediante tags de Cucumber y la generación de reportes mediante Serenity BDD.

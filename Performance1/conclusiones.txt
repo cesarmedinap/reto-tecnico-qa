@@ -1,0 +1,13 @@
+CONCLUSIONES
+
+Se realizó una prueba de carga sobre el servicio de login de FakeStoreAPI utilizando Apache JMeter.
+
+Durante la ejecución se alcanzó un throughput de 23.1 peticiones por segundo (TPS), superando el mínimo requerido de 20 TPS.
+
+La tasa de error obtenida fue de 0.87%, por debajo del límite máximo permitido de 3%.
+
+El tiempo promedio de respuesta fue de 564 ms. Asimismo, el percentil 95 fue de 604 ms y el percentil 99 de 1,071 ms, manteniéndose dentro del objetivo de 1.5 segundos para la gran mayoría de las solicitudes.
+
+Sin embargo, se registró un tiempo máximo de respuesta de 21,703 ms, por lo que se identificaron respuestas atípicas que superaron el tiempo esperado.
+
+En general, el servicio presentó un comportamiento estable bajo la carga aplicada, cumpliendo con el objetivo de throughput y con la tasa de error establecida. Se recomienda revisar las solicitudes con tiempos de respuesta elevados para identificar posibles causas de latencia.
