@@ -1,0 +1,5912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"db61cb03-696c-4318-8c7f-9a4235cf84b2",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.ConsultarMascotaPorEstado</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-10-07 05:20:26 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Consultar Mascota por estado</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/ConsultarMascotaPorEstado.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Consultar Mascota por ID</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">ConsultarMascotaPorEstado</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Consultar Mascota por estado</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2934</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:20:23.280 Ejecutando pruebas sobre Petstore 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def resultado = call read(&#39;classpath:features/ActualizarMascota.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">995</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.ActualizarMascota</div>
+      </div>
+      <div class="time-cell passed">981</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def resultado = call read(&#39;classpath:features/ConsultarMascotaPorID.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">673</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.9.0.call">
+      <div class="step-container" id="0.9.0.call.0.8.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.ConsultarMascotaPorID</div>
+      </div>
+      <div class="time-cell passed">662</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def resultado = call read(&#39;classpath:features/AgregarMascota.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">340</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+      <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.AgregarMascota</div>
+      </div>
+      <div class="time-cell passed">326</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomDog = &#39;Dog&#39; + Math.floor(Math.random() * 9000 + 1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:request/AgregarMascota.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set body.name = randomDog</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">316</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.8.0.call.0.9.0.call.0.17">17:20:23.641 [print] {
+  &quot;id&quot;: 9223372036854775807,
+  &quot;category&quot;: {
+    &quot;id&quot;: 0,
+    &quot;name&quot;: &quot;string&quot;
+  },
+  &quot;name&quot;: &quot;Dog8632&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;string&quot;
+  ],
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;available&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call.0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.9.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mascotaId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mascotaId = resultado.mascotaId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/pet&#39;, mascotaId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">317</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.8.0.call.0.15">17:20:23.965 [print] {
+  &quot;id&quot;: 9223372036854775807,
+  &quot;category&quot;: {
+    &quot;id&quot;: 0,
+    &quot;name&quot;: &quot;string&quot;
+  },
+  &quot;name&quot;: &quot;Dog8632&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;string&quot;
+  ],
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;available&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.8.0.call">
+    <div class="step-container" id="0.9.0.call.0.8.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mascotaId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mascotaId = resultado.mascotaId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def aleatorio = &#39;Cat&#39; + Math.floor(Math.random() * 9000 + 1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:request/AgregarMascota.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set body.name = aleatorio</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set body.id = mascotaId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set body.status = &#39;sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">297</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.20">17:20:24.274 [print] {
+  &quot;id&quot;: 9223372036854775807,
+  &quot;category&quot;: {
+    &quot;id&quot;: 0,
+    &quot;name&quot;: &quot;string&quot;
+  },
+  &quot;name&quot;: &quot;Cat2950&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;string&quot;
+  ],
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;sold&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mascotaId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mascotaId = resultado.mascotaId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/pet/findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = &#39;sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1856</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">17:20:26.161 [print] [
+  {
+    &quot;id&quot;: 739326,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 776833,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 498905,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 841391,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 553886,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 995754,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791380797,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791380797,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791380797,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791380800,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791380800,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791380800,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 566736,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 839729,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 981152,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 652228,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 4100,
+    &quot;category&quot;: {
+      &quot;id&quot;: 100,
+      &quot;name&quot;: &quot;kolapo&quot;
+    },
+    &quot;name&quot;: &quot;OMOLOLA HOSPITAL&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://jam.dev/c/d1b92e01-9a0a-4c53-ab74-39d5e0ed3419&quot;,
+      &quot;https://jam.dev/c/242f823f-8123-4e24-abf4-3fc9fd585fe6&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 105,
+        &quot;name&quot;: &quot;faith&quot;
+      },
+      {
+        &quot;id&quot;: 110,
+        &quot;name&quot;: &quot;dorcas&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791381574353,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;categoria do pet&quot;
+    },
+    &quot;name&quot;: &quot;pet-1791381574353-updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/pet.png&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;cypress&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 643313080,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;perros&quot;
+    },
+    &quot;name&quot;: &quot;Firulais Adoptado&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/firulais.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;amigable&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791382307518,
+    &quot;name&quot;: &quot;Шарик&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 513690,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791382364912,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 139745,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791382785,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791382785,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791382785,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791382789,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791382789,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791382789,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383061200,
+    &quot;name&quot;: &quot;Шарик&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383075598,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383367671,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383385150,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 957771,
+    &quot;category&quot;: {
+      &quot;id&quot;: 4,
+      &quot;name&quot;: &quot;Rabbits&quot;
+    },
+    &quot;name&quot;: &quot;Buddy_957771&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/pet_photos/957771.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 29,
+        &quot;name&quot;: &quot;vaccinated&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383417966,
+    &quot;name&quot;: &quot;Шарик&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383428453,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383489873,
+    &quot;name&quot;: &quot;Шарик&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383507162,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383596898,
+    &quot;name&quot;: &quot;Шарик&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383609498,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383706211,
+    &quot;name&quot;: &quot;Шарик&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383722660,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383797345,
+    &quot;name&quot;: &quot;Шарик&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383810997,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383890,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791383890,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791383890,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383891,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791383891,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791383891,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383892,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791383892,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791383892,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383893596,
+    &quot;name&quot;: &quot;Шарик&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383896,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791383896,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791383896,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383897,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791383897,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791383897,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383898,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791383898,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791383898,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791383910626,
+    &quot;name&quot;: &quot;Мурка&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 15588,
+    &quot;name&quot;: &quot;lola&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1006,
+    &quot;name&quot;: &quot;Daisy&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 4242,
+    &quot;name&quot;: &quot;Crystent demo dog&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 492441,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;dogs&quot;
+    },
+    &quot;name&quot;: &quot;updated-44e55475&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;cute&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 20593238,
+    &quot;category&quot;: {
+      &quot;id&quot;: 96650357,
+      &quot;name&quot;: &quot;ut aute&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;in deserunt sit qui elit&quot;,
+      &quot;do dolore&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 80489283,
+        &quot;name&quot;: &quot;dolore elit aute Excepteur anim&quot;
+      },
+      {
+        &quot;id&quot;: -29854588,
+        &quot;name&quot;: &quot;enim&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 802933,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 947117,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 340019,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 714913,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 817253,
+    &quot;name&quot;: &quot;updated_pet&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 875504,
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/photo.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 626388990,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;premium&quot;
+    },
+    &quot;name&quot;: &quot;Emma&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;nuevo&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 666635355,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;premium&quot;
+    },
+    &quot;name&quot;: &quot;Olivia&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;nuevo&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 183872437,
+    &quot;category&quot;: {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;cats&quot;
+    },
+    &quot;name&quot;: &quot;updated-b60834ca&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/new.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;tag2&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 387081297,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;dogs&quot;
+    },
+    &quot;name&quot;: &quot;baseline-pet-updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/photo1.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 387127951,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;dogs&quot;
+    },
+    &quot;name&quot;: &quot;idem-pet-updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/photo1.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;tag1&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791387189,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791387189,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791387189,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791387191,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791387191,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791387191,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791387282,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791387282,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791387282,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791387285,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791387285,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791387285,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791388607,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791388607,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791388607,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791388608,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791388608,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791388608,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 89171528,
+    &quot;name&quot;: &quot;baseline-pet-updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/updated.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 89239051,
+    &quot;name&quot;: &quot;idem-pet-updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://example.com/x.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791389763,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791389763,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791389763,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791389766,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791389766,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791389766,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791392460,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791392460,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791392460,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791392464,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791392464,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791392464,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791393054,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791393054,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791393054,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791394142,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791394142,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791394142,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791394143,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791394143,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791394143,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791394484,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791394484,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791394484,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791394488,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791394488,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791394488,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791394491,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791394491,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791394491,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791394499,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791394499,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791394499,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791394502,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791394502,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791394502,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791394505,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791394505,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791394505,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 777001,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;c&quot;
+    },
+    &quot;name&quot;: &quot;form_updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;u&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 16,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;boy&quot;
+    },
+    &quot;name&quot;: &quot;Tom&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://upload.wikimedia.org/wikipedia/commons/0/0c/Deutscher_Sch%C3%A4ferhund-_portrait.JPG&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 16,
+        &quot;name&quot;: &quot;nemeckaya ovcharka&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 56331470,
+    &quot;category&quot;: {
+      &quot;id&quot;: 28262311,
+      &quot;name&quot;: &quot;nostrud proident&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;sunt dolor veniam aliqua&quot;,
+      &quot;nulla anim ex&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 21515670,
+        &quot;name&quot;: &quot;voluptate in elit ani&quot;
+      },
+      {
+        &quot;id&quot;: -36858804,
+        &quot;name&quot;: &quot;proident non deserunt&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791396314,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791396314,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791396314,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791396318,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791396318,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791396318,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791396660,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791396660,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791396660,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791396664,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791396664,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791396664,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 360729,
+    &quot;name&quot;: &quot;UpdatedName&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 670301,
+    &quot;name&quot;: &quot;UpdatedName&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791397261,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791397261,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791397261,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791397265,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791397265,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791397265,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 105477,
+    &quot;name&quot;: &quot;UpdatedName&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791397348,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791397348,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791397348,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791397352,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791397352,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791397352,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 91507602,
+    &quot;category&quot;: {
+      &quot;id&quot;: -95494262,
+      &quot;name&quot;: &quot;sit ea&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;deserunt&quot;,
+      &quot;id sint et&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -54029842,
+        &quot;name&quot;: &quot;ullamco&quot;
+      },
+      {
+        &quot;id&quot;: 13198949,
+        &quot;name&quot;: &quot;id&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 3903023,
+    &quot;category&quot;: {
+      &quot;id&quot;: -56789506,
+      &quot;name&quot;: &quot;cillum p&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;aliquip Excepteur&quot;,
+      &quot;commodo dolore consequat eu&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 60937326,
+        &quot;name&quot;: &quot;irure in&quot;
+      },
+      {
+        &quot;id&quot;: 20218536,
+        &quot;name&quot;: &quot;sint consectetur ad voluptate&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 3708840,
+    &quot;category&quot;: {
+      &quot;id&quot;: 9855812,
+      &quot;name&quot;: &quot;Duis in commodo&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;minim id in sit&quot;,
+      &quot;est esse culpa nisi&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -89808508,
+        &quot;name&quot;: &quot;sit&quot;
+      },
+      {
+        &quot;id&quot;: -5238278,
+        &quot;name&quot;: &quot;dolor in&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398455,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398455,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398455,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398458,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398458,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398458,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398461,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398461,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398461,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398468,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398468,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398468,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398471,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398471,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398471,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398474,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398474,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398474,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 24093935,
+    &quot;category&quot;: {
+      &quot;id&quot;: -6714225,
+      &quot;name&quot;: &quot;do magna&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;aute&quot;,
+      &quot;velit&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 71561130,
+        &quot;name&quot;: &quot;deserunt ut occaecat&quot;
+      },
+      {
+        &quot;id&quot;: -1195842,
+        &quot;name&quot;: &quot;nulla nostrud occaeca&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398686,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398686,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398686,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398687,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398687,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398687,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398689,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398689,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398689,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398692,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398692,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398692,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398693,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398693,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398693,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398695,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398695,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398695,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398762,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398762,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398762,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398763,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398763,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398763,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398764,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398764,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398764,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398767,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398767,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398767,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398769,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398769,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398769,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791398770,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791398770,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791398770,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399507,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399507,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399507,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399508,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399508,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399508,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399509,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399509,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399509,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399513,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399513,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399513,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399514,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399514,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399514,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399515,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399515,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399515,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399670,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399670,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399670,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399671,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399671,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399671,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399672,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399672,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399672,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399676,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399676,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399676,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399677,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399677,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399677,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791399678,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791399678,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791399678,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400003,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400003,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400003,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400006,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400006,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400006,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400009,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400009,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400009,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400016,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400016,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400016,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400019,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400019,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400019,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400022,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400022,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400022,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 50,
+    &quot;category&quot;: {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;dog_category50&quot;
+    },
+    &quot;name&quot;: &quot;dognamesold&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 51,
+        &quot;name&quot;: &quot;dognamesold&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1001,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dogs&quot;
+    },
+    &quot;name&quot;: &quot;Max&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;playful&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400564,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400564,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400564,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400568,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400568,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400568,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400686,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400686,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400686,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400690,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400690,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400690,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400804,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400804,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400804,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400808,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400808,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400808,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400858,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400858,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400858,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791400861,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791400861,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791400861,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 74408294,
+    &quot;category&quot;: {
+      &quot;id&quot;: 70278030,
+      &quot;name&quot;: &quot;in adipisicing&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;nostrud sunt eu occaecat elit&quot;,
+      &quot;esse aute non magna&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 81618844,
+        &quot;name&quot;: &quot;id aliquip&quot;
+      },
+      {
+        &quot;id&quot;: -96817599,
+        &quot;name&quot;: &quot;ut elit esse&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791401402,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791401402,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791401402,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791401588,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791401588,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791401588,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791401957,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791401957,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791401957,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402052,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402052,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402052,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402081,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402081,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402081,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402106,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402106,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402106,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402269,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402269,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402269,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402428,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402428,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402428,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402464,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402464,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402464,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402501,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402501,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402501,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402509,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402509,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402509,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402606,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402606,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402606,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402729,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402729,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402729,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402931,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402931,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402931,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402961,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402961,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402961,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402964,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402964,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402964,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402971,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402971,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402971,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402974,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402974,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402974,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791402978,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791402978,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791402978,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403006,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403006,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403006,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403010,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403010,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403010,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403030,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403030,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403030,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403033,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403033,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403033,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403040,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403040,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403040,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403044,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403044,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403044,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403047,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403047,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity with updated&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403047,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403064,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403064,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403064,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403070,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403070,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403070,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403072,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403072,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403072,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403074,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403074,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403074,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403088,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403088,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403088,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403092,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403092,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403092,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403094,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403094,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403094,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403101,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403101,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403101,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403107,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403107,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403107,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403226,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403226,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403226,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403258,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403258,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403258,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403319,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403319,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403319,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403391,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403391,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403391,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791403789,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791403789,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791403789,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791404025,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791404025,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791404025,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791404417,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791404417,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791404417,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791406160,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791406160,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791406160,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791406164,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791406164,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791406164,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 87705905,
+    &quot;category&quot;: {
+      &quot;id&quot;: 22032096,
+      &quot;name&quot;: &quot;reprehenderit in minim&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;cillum Ut &quot;,
+      &quot;et adipisicing consequat&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -14103627,
+        &quot;name&quot;: &quot;reprehenderit&quot;
+      },
+      {
+        &quot;id&quot;: 47181501,
+        &quot;name&quot;: &quot;occaecat&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854773917,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;boss2.0&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 51338511,
+    &quot;category&quot;: {
+      &quot;id&quot;: 43003430,
+      &quot;name&quot;: &quot;ex ullamco&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;sit ipsum&quot;,
+      &quot;nulla eu aliqua incididunt&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1864541,
+        &quot;name&quot;: &quot;anim elit amet&quot;
+      },
+      {
+        &quot;id&quot;: 98553871,
+        &quot;name&quot;: &quot;ut&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854775458,
+    &quot;category&quot;: {
+      &quot;id&quot;: -1545904,
+      &quot;name&quot;: &quot;fishs&quot;
+    },
+    &quot;name&quot;: &quot;nemo fish&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;fugiat ex&quot;,
+      &quot;https://img.freepik.com/free-vector/one-goldfish-on-white-background_1308-73185.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 78174477,
+        &quot;name&quot;: &quot;sint aliquip&quot;
+      },
+      {
+        &quot;id&quot;: 34196593,
+        &quot;name&quot;: &quot;tempor cillum incididunt exercitation veniam&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 23437566,
+    &quot;category&quot;: {
+      &quot;id&quot;: -46393995,
+      &quot;name&quot;: &quot;ex ea culpa&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ut ex veniam dolor&quot;,
+      &quot;in aliquip&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 91638732,
+        &quot;name&quot;: &quot;Excepteur ea commodo esse&quot;
+      },
+      {
+        &quot;id&quot;: 42980181,
+        &quot;name&quot;: &quot;nulla officia ut labore&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 79897977,
+    &quot;category&quot;: {
+      &quot;id&quot;: -43696612,
+      &quot;name&quot;: &quot;exercitation&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolor&quot;,
+      &quot;velit voluptate&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 59218385,
+        &quot;name&quot;: &quot;aliqua&quot;
+      },
+      {
+        &quot;id&quot;: 72829050,
+        &quot;name&quot;: &quot;nostrud ut&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 82188160,
+    &quot;category&quot;: {
+      &quot;id&quot;: 81640824,
+      &quot;name&quot;: &quot;nisi exercitation reprehenderit dolore&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;proident eu enim&quot;,
+      &quot;mollit cillum nisi&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 6316356,
+        &quot;name&quot;: &quot;laborum magn&quot;
+      },
+      {
+        &quot;id&quot;: 73149614,
+        &quot;name&quot;: &quot;veniam fugiat amet si&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 33845545,
+    &quot;category&quot;: {
+      &quot;id&quot;: -13100367,
+      &quot;name&quot;: &quot;deserunt aute irure&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolore reprehenderit adipisicing sed&quot;,
+      &quot;tempor irure consectetur amet&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -43225306,
+        &quot;name&quot;: &quot;laborum proident Excepteur&quot;
+      },
+      {
+        &quot;id&quot;: -7466415,
+        &quot;name&quot;: &quot;ut in cupidatat laboris&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 60,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 40010473,
+    &quot;category&quot;: {
+      &quot;id&quot;: -13430874,
+      &quot;name&quot;: &quot;in fugiat ipsum&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;proident sed ut&quot;,
+      &quot;aute laboris elit occaecat aliquip&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -64712721,
+        &quot;name&quot;: &quot;ad&quot;
+      },
+      {
+        &quot;id&quot;: 40504054,
+        &quot;name&quot;: &quot;in&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 999999,
+    &quot;name&quot;: &quot;UpdatedPlaywrightDog&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://example.com/dog.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 76621170,
+    &quot;category&quot;: {
+      &quot;id&quot;: 16364966,
+      &quot;name&quot;: &quot;Ut cupidatat velit irure minim&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolore quis&quot;,
+      &quot;elit ea aliqua dolor adipisicing&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 24591216,
+        &quot;name&quot;: &quot;ullamco magna laborum ut&quot;
+      },
+      {
+        &quot;id&quot;: 52512638,
+        &quot;name&quot;: &quot;sunt non Lorem&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 70119872,
+    &quot;category&quot;: {
+      &quot;id&quot;: 93142102,
+      &quot;name&quot;: &quot;Змея&quot;
+    },
+    &quot;name&quot;: &quot;Анаконда&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;mollit&quot;,
+      &quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -19037377,
+        &quot;name&quot;: &quot;deserunt veniam nulla reprehenderit&quot;
+      },
+      {
+        &quot;id&quot;: 51503358,
+        &quot;name&quot;: &quot;ullamco aliqua Excepteur cillum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 70119872000,
+    &quot;category&quot;: {
+      &quot;id&quot;: 93142102,
+      &quot;name&quot;: &quot;Заяц французский 2&quot;
+    },
+    &quot;name&quot;: &quot;LAPIN LAPIN&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;mollit&quot;,
+      &quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -19037377,
+        &quot;name&quot;: &quot;deserunt veniam nulla reprehenderit&quot;
+      },
+      {
+        &quot;id&quot;: 51503358,
+        &quot;name&quot;: &quot;ullamco aliqua Excepteur cillum&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 23327731,
+    &quot;category&quot;: {
+      &quot;id&quot;: -92357313,
+      &quot;name&quot;: &quot;reprehenderit ut nostrud ut&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;Lorem laboris&quot;,
+      &quot;laboris&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 89386643,
+        &quot;name&quot;: &quot;elit esse cillum&quot;
+      },
+      {
+        &quot;id&quot;: -23396785,
+        &quot;name&quot;: &quot;minim consectetur&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 71551342,
+    &quot;category&quot;: {
+      &quot;id&quot;: 14955550,
+      &quot;name&quot;: &quot;ipsum do amet&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolore dolor&quot;,
+      &quot;pariatur elit ea&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -17398234,
+        &quot;name&quot;: &quot;non ex&quot;
+      },
+      {
+        &quot;id&quot;: -32010324,
+        &quot;name&quot;: &quot;ut culpa aliqua est non&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 24364310,
+    &quot;category&quot;: {
+      &quot;id&quot;: -12307344,
+      &quot;name&quot;: &quot;kitten бфрмалейка&quot;
+    },
+    &quot;name&quot;: &quot;kitten1&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;dolor in&quot;,
+      &quot;occaecat dolore consectetur adipisicing&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -22679152,
+        &quot;name&quot;: &quot;non ex&quot;
+      },
+      {
+        &quot;id&quot;: 33284191,
+        &quot;name&quot;: &quot;sed pariatur in&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 62751340,
+    &quot;category&quot;: {
+      &quot;id&quot;: -37441254,
+      &quot;name&quot;: &quot;aute cillum voluptate veniam&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;mollit veniam&quot;,
+      &quot;dolor enim reprehenderit&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 91709679,
+        &quot;name&quot;: &quot;anim adipisicing&quot;
+      },
+      {
+        &quot;id&quot;: 919209,
+        &quot;name&quot;: &quot;sint anim&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 33377689,
+    &quot;category&quot;: {
+      &quot;id&quot;: -5871190,
+      &quot;name&quot;: &quot;in voluptate velit proident&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;amet in&quot;,
+      &quot;aute in&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -26593919,
+        &quot;name&quot;: &quot;tempor eiusmod ipsum&quot;
+      },
+      {
+        &quot;id&quot;: 78722837,
+        &quot;name&quot;: &quot;in sit ullamco aliqua qui&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 90369791,
+    &quot;category&quot;: {
+      &quot;id&quot;: -28594492,
+      &quot;name&quot;: &quot;ad&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;nulla ipsum dolor&quot;,
+      &quot;cillum&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 16964237,
+        &quot;name&quot;: &quot;velit aliquip occaecat voluptate&quot;
+      },
+      {
+        &quot;id&quot;: -32143651,
+        &quot;name&quot;: &quot;sed nulla sint&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 38480305,
+    &quot;category&quot;: {
+      &quot;id&quot;: -59161747,
+      &quot;name&quot;: &quot;Duis voluptate consequat&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ex enim &quot;,
+      &quot;nisi est&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 49121599,
+        &quot;name&quot;: &quot;non anim exercitation&quot;
+      },
+      {
+        &quot;id&quot;: 2672065,
+        &quot;name&quot;: &quot;sint&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 52931566,
+    &quot;category&quot;: {
+      &quot;id&quot;: 91307171,
+      &quot;name&quot;: &quot;sint aliqua&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ut culpa null&quot;,
+      &quot;quis&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -40794559,
+        &quot;name&quot;: &quot;velit proident nulla&quot;
+      },
+      {
+        &quot;id&quot;: -14228534,
+        &quot;name&quot;: &quot;ess&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1711982,
+    &quot;category&quot;: {
+      &quot;id&quot;: 52551857,
+      &quot;name&quot;: &quot;non Lorem tempor&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;veniam&quot;,
+      &quot;reprehenderit commodo proident occaecat&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -12689894,
+        &quot;name&quot;: &quot;veniam mollit&quot;
+      },
+      {
+        &quot;id&quot;: -27514803,
+        &quot;name&quot;: &quot;sed ullamco ut&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2022000,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;bird&quot;
+    },
+    &quot;name&quot;: &quot;Star&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;shy&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 24572652,
+    &quot;category&quot;: {
+      &quot;id&quot;: 70314021,
+      &quot;name&quot;: &quot;adipisicing dolore&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;magna dolor Ut in&quot;,
+      &quot;in eiusm&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 85643839,
+        &quot;name&quot;: &quot;aliquip sit dolor&quot;
+      },
+      {
+        &quot;id&quot;: -89364963,
+        &quot;name&quot;: &quot;elit id reprehenderit eiusmod exercitation&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 5644444,
+    &quot;category&quot;: {
+      &quot;id&quot;: 566555,
+      &quot;name&quot;: &quot;nulla minim laborum deserunt&quot;
+    },
+    &quot;name&quot;: &quot;Собака&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;anim ullamco laborum eu&quot;,
+      &quot;eiusm&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 10156776,
+        &quot;name&quot;: &quot;cillum adipisicing&quot;
+      },
+      {
+        &quot;id&quot;: -53013483,
+        &quot;name&quot;: &quot;sit Ut enim dolore&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 777123,
+    &quot;category&quot;: {
+      &quot;id&quot;: 777123,
+      &quot;name&quot;: &quot;fish&quot;
+    },
+    &quot;name&quot;: &quot;Nemo&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;,
+      &quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 123,
+        &quot;name&quot;: &quot;priff&quot;
+      },
+      {
+        &quot;id&quot;: 123,
+        &quot;name&quot;: &quot;ribka&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 38541659,
+    &quot;category&quot;: {
+      &quot;id&quot;: -70999792,
+      &quot;name&quot;: &quot;dolore aliqua irure&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;cupidatat quis&quot;,
+      &quot;ipsum deserunt&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 96985450,
+        &quot;name&quot;: &quot;proident adipisicing officia&quot;
+      },
+      {
+        &quot;id&quot;: -17203769,
+        &quot;name&quot;: &quot;sunt reprehenderit&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 424242,
+    &quot;name&quot;: &quot;Mcp42Form&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791408102,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791408102,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791408102,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791408518,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791408518,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791408518,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791408577,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791408577,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791408577,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791408814,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791408814,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791408814,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791408830,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791408830,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791408830,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791408954,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791408954,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791408954,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791408989,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791408989,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791408989,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791409132,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791409132,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791409132,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791409135,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791409135,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791409135,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791409207,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791409207,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791409207,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791409298,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791409298,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791409298,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791409302,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791409302,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791409302,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791409387,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791409387,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791409387,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791409616,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791409616,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791409616,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791410181,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791410181,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791410181,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791410235,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791410235,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791410235,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791410408,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791410408,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791410408,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791410412,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791410412,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791410412,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 36872199,
+    &quot;category&quot;: {
+      &quot;id&quot;: 87131763,
+      &quot;name&quot;: &quot;consectetur&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;officia&quot;,
+      &quot;fugiat Duis sint&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: -32111804,
+        &quot;name&quot;: &quot;sit consectetur&quot;
+      },
+      {
+        &quot;id&quot;: -4313164,
+        &quot;name&quot;: &quot;consectetur nulla laborum id&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854775807,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Cat2950&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791410563,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791410563,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791410563,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791410567,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791410567,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791410567,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 49199499,
+    &quot;category&quot;: {
+      &quot;id&quot;: 20305865,
+      &quot;name&quot;: &quot;et cupidatat nisi incididunt&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;sunt esse consequat&quot;,
+      &quot;Ut nostrud anim adipisicing&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 33995919,
+        &quot;name&quot;: &quot;tempor non nostrud&quot;
+      },
+      {
+        &quot;id&quot;: -54707686,
+        &quot;name&quot;: &quot;qui pariatur&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791411130,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791411130,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791411130,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791411303,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791411303,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791411303,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791411307,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791411307,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791411307,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1791411346,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1791411346,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1791411346,
+        &quot;name&quot;: &quot;swagger-codegen-python-pet-tag&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mascotaEncontrada = response.filter(x =&gt; x.id == mascotaId)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">53</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Mascota encontrada:&#39;, mascotaEncontrada</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">17:20:26.218 [print] Mascota encontrada: [
+  {
+    &quot;id&quot;: 9223372036854775458,
+    &quot;category&quot;: {
+      &quot;id&quot;: -1545904,
+      &quot;name&quot;: &quot;fishs&quot;
+    },
+    &quot;name&quot;: &quot;nemo fish&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;fugiat ex&quot;,
+      &quot;https://img.freepik.com/free-vector/one-goldfish-on-white-background_1308-73185.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 78174477,
+        &quot;name&quot;: &quot;sint aliquip&quot;
+      },
+      {
+        &quot;id&quot;: 34196593,
+        &quot;name&quot;: &quot;tempor cillum incididunt exercitation veniam&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854775807,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    },
+    &quot;name&quot;: &quot;Cat2950&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
