@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 import static com.bdd.userinterfaces.DemoBlazeCompraUI.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
@@ -87,7 +87,9 @@ public class RealizarPedidoDemoBlaze implements Task {
                 Enter.theValue(year).into(txt_year),
 
                 WaitUntil.the(btn_purchase, isEnabled()).forNoMoreThan(15).seconds(),
-                Click.on(btn_purchase)
+                Click.on(btn_purchase),
+
+                WaitUntil.the(lbl_compra_exitosa, isVisible()).forNoMoreThan(15).seconds()
         );
     }
 }
