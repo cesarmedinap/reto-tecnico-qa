@@ -12,6 +12,7 @@ import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.WebDriver;
 import com.bdd.tasks.VisualizarCarrito;
 
@@ -79,10 +80,9 @@ public class ComprarProductosStepDefinitions {
 
     @Then("valida que la compra se realizo correctamente mediante el voucher de confirmacion")
     public void validaQueLaCompraSeRealizoCorrectamenteMedianteElVoucherDeConfirmacion() {
-        theActorInTheSpotlight().should(
-                eventually(
-                        seeThat(the(lbl_compra_exitosa), isVisible())
-                )
+        theActorInTheSpotlight().attemptsTo(
+                WaitUntil.the(lbl_compra_exitosa, isVisible())
+                        .forNoMoreThan(30).seconds()
         );
     }
 
